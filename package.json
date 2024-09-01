@@ -1,21 +1,39 @@
 {
-  "name": "tiktok-tele-bot",
-  "version": "0.0.1",
-  "description": "Simple Telegram Bot TikTok Downloader.",
-  "main": "Telegraf.js",
+  "name": "telegram-tiktok-downloader-bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot for downloading TikTok videos.",
+  "main": "index.js",
   "scripts": {
-    "start": "node Telegraf.js"
-  },
-  "author": "Tio",
-  "license": "ISC",
-   "engines": {
-    "node": "18.x"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "dependencies": {
-    "btch-downloader": "2.3.2",
-    "node-telegram-bot-api": "^0.52.0",
-    "chalk": "^4.1.1",
+    "btch-downloader": "2.3.2",  // Replace with the correct version if needed
+    "chalk": "^5.0.0",
     "express": "^4.18.2",
-    "figlet": "^1.6.0"
-  }
+    "figlet": "^1.5.2",
+    "mongoose": "^7.2.0",
+    "node-telegram-bot-api": "^0.61.0",
+    "request": "^2.88.2",
+    "util": "^0.12.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oshadaX-Wolf/tiktok-tele-bot.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "tiktok",
+    "downloader",
+    "nodejs"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
 }
